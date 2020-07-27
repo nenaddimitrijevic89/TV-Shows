@@ -31,19 +31,19 @@ export const fetchCast = (id, onSuccess) => {
 }
 
 export const fetchCrew = (id, onSuccess) => {
-    fetch(`http://api.tvmaze.com/shows/${id}/crew`, (data) => {
+    fetch(`https://api.tvmaze.com/shows/${id}/crew`, (data) => {
         onSuccess(data)
     })
 }
 
 export const fetchAka = (id, onSuccess) => {
-    fetch(`http://api.tvmaze.com/shows/${id}/akas`, (data) => {
+    fetch(`https://api.tvmaze.com/shows/${id}/akas`, (data) => {
         onSuccess(data);
     })
 }
 
 export const fetchEpisodes = (id, onSuccess) => {
-    fetch(`http://api.tvmaze.com/shows/${id}/episodes`, (data) => {
+    fetch(`https://api.tvmaze.com/shows/${id}/episodes`, (data) => {
         onSuccess(data);
     })
 }
