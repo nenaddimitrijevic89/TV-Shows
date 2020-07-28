@@ -1,5 +1,13 @@
 /***********   main    ***********/
 
+@keyframes spin { 
+    from { 
+        transform: rotateY(0deg); 
+    } to { 
+        transform: rotateY(360deg); 
+    }
+}
+
 * {
     font-family: 'Comic Neue', cursive;
 }
@@ -12,6 +20,10 @@ li {
     position: fixed;
     width: 100%;
     z-index: 1;
+}
+.width{
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .listOfShows {
@@ -76,6 +88,11 @@ li {
         text-align: justify;
     }
 }
+.card:hover{
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
 
 
 /*****************     singleShow page     *****************/
@@ -83,6 +100,7 @@ li {
 .poster {
     img {
         width: 100%;
+        margin-top: 25px;
     }
 }
 

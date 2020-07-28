@@ -54,11 +54,13 @@ export const renderSingleShow = (show) => {
 /*****************     dropdown search list     **********************/
 
 export const makingList = (show) => {
+
     const $ulSearch = document.createElement("ul");
 
     if (!getInputValue() === " " || getInputValue() === "") {
         $searchList.innerHTML = "";
     }
+
     for (let i = 0; i < show.length; i++) {
         $searchList.innerHTML = "";
         const $li = document.createElement("li");
