@@ -71,7 +71,6 @@ li {
     }
 }
 
-
 /************    homepage    **************/
 
 .card {
@@ -123,3 +122,27 @@ li {
         text-align: justify;
     }
 }
+
+@media only screen and (min-width: 1400px) {
+   .searcher{
+       ul{
+           right:10%;
+       }
+   }
+   }
+
+   @media only screen and (min-width: 1600px) {
+    .searcher{
+        ul{
+            right:15%;
+        }
+    }
+    }
+
+    @media only screen and (min-width: 1800px) {
+        .searcher{
+            ul{
+                right:20%;
+            }
+        }
+        }
